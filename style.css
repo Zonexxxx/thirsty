@@ -1,0 +1,146 @@
+/* Gaya Umum untuk Body */
+body {
+    font-family: 'Arial', sans-serif;
+    background-color: #003055;
+    color: #333;
+    margin: 0;
+    padding: 0;
+}
+
+/* Tombol Kembali */
+.back-button {
+    text-align: center;
+    margin: 20px 0;
+}
+
+.back-button button {
+    background-color: #705e58; /* Warna oranye cerah */
+    color: white;
+    padding: 12px 30px;
+    border: none;
+    font-size: 1.1rem;
+    cursor: pointer;
+    border-radius: 50px;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.back-button button:hover {
+    background-color:#e1e810; /* Warna oranye lebih gelap saat hover */
+    transform: scale(1.1);
+}
+
+.back-button button:focus {
+    outline: none;
+}
+
+/* Section Menu Lengkap */
+.section {
+    padding: 60px 20px;
+    text-align: center;
+    background-color: #e4e3d5;
+}
+
+.section-title h2 {
+    font-size: 2.5rem;
+    font-weight: bold;
+    color: #333;
+}
+
+/* Menu List */
+.menu-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    gap: 2rem;
+    margin-top: 20px;
+    padding-bottom: 7%;
+}
+
+.menu-item {
+    background-color: #003055;
+    padding: 25px;
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    
+}
+
+.menu-item:hover {
+    transform: translateY(-10px);
+    box-shadow: 0 6px 20px rgba(0, 0, 0, 0.15);
+}
+
+.menu-item h3 {
+    font-size: 1.5rem;
+    color: #e47070;
+    margin-bottom: 10px;
+    display: flex;
+    justify-content: space-between; /* Membuat judul dan harga sejajar */
+    align-items: left;
+}
+
+.menu-item ul {
+    list-style-type: none;
+    padding: 0;
+    margin-top: 10px; /* Menambah jarak antara daftar dengan judul/harga */
+    
+}
+
+.menu-item li {
+    font-size: 1rem;
+    color: #868282;
+    margin: 5px 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+/* Styling untuk Harga */
+.menu-item .menu-item-price {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #c1ff07;
+    margin-left: 10px; /* Memberi jarak dengan judul */
+}
+
+/* Responsif */
+@media (max-width: 768px) {
+    .menu-list {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .section-title h2 {
+        font-size: 2rem;
+    }
+
+    .menu-item h3 {
+        font-size: 1.6rem;
+    }
+
+    .menu-item li {
+        font-size: 1rem;
+    }
+}
+
+/* Footer */
+footer {
+    background-color: #17180e;
+            color: lightblue;
+            text-align: center;
+            padding: 1rem;
+            position: fixed;
+            bottom: 0;
+            width:100%;
+            height: 5%;
+            z-index: 1000;
+}
+
+footer p {
+    margin: 0;
+}
+
+footer a {
+    color: #1e0459;
+    text-decoration: none;
+}
+
+footer a:hover {
+    text-decoration: underline;
+}
